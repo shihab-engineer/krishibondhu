@@ -1,0 +1,7 @@
+{
+  "name": "krishibondhu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crop-disease early warning and field-to-market for Bangladesh",
+  "scripts": { "test": "node tests/market.test.js", "start": "python3 -m http.server 8080" }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "KrishiBondhu",
+  "short_name": "KrishiBondhu",
+  "description": "Crop disease diagnosis and outbreak alerts for Bangladeshi farmers",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6b43",
+  "lang": "bn",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

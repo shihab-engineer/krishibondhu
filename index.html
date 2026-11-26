@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KrishiBondhu – crop disease early warning and field-to-market for Bangladesh</title>
+<meta name="description" content="Bangla crop-disease diagnosis, a 64-district outbreak map, best-market and collection-point finder, and buyer matching for Bangladeshi farmers.">
+<meta property="og:title" content="KrishiBondhu"><meta property="og:description" content="Catch crop disease early and lose less on the way to market.">
+<meta name="theme-color" content="#1f6b43">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/extras.css">
+<script>try{var _s=JSON.parse(localStorage.getItem("ap_session")||"null");if(!_s||!_s.email)document.documentElement.classList.add("locked")}catch(e){document.documentElement.classList.add("locked")}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content · মূল অংশে যান</a>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.800-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1-5h14l1 5M4 9v11h16V9M4 9c0 2 3 2 4 0 1 2 3 2 4 0 1 2 3 2 4 0 1 2 4 2 4 0M10 20v-5h4v5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.500" width="10" height="19" rx="2"/><path d="M11 18.500h2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zM17 9a4 4 0 0 1 0 6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2L12 3zM12 10v5M12 18h.01"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></symbol>
+  <symbol id="i-bug" viewBox="0 0 24 24"><rect x="8" y="7" width="8" height="12" rx="4"/><path d="M9 7a3 3 0 0 1 6 0M4 12h4M16 12h4M5 6l3 3M19 6l-3 3M5 19l3-3M19 19l-3-3"/></symbol>
+
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-8A6 6 0 0 1 18 9.500 4 4 0 0 1 17.500 18H7z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zM4 19a2 2 0 0 1 2-2h13"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.6.300-1 .8-1 1.500M12 17h.01"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.500"/><rect x="14" y="4" width="6" height="6" rx="1.500"/><rect x="4" y="14" width="6" height="6" rx="1.500"/><rect x="14" y="14" width="6" height="6" rx="1.500"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4V8z"/><circle cx="12" cy="13" r="3.500"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></symbol>
+  <symbol id="i-road" viewBox="0 0 24 24"><path d="M5 21L9 3M19 21L15 3M12 4v3M12 11v3M12 18v3"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.500 9.500c0-1 1-1.500 2.500-1.500s2.500.7 2.500 1.800c0 2.300-5 1.200-5 3.700 0 1.100 1 1.800 2.500 1.800s2.500-.5 2.500-1.500"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+
+<!-- ============ AUTH GATE ============ -->
+<div id="authGate" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="auth">
+    <div class="auth-top">
+      <button class="btn-ghost" id="authLang" type="button" aria-label="Language">বাং / EN</button>
+      <button class="btn-ghost" id="authTheme" type="button" aria-label="Theme"><svg class="i"><use href="#i-sun"/></svg></button>
+    </div>
+    <div class="auth-brand"><span class="logo-mark"><svg class="i"><use href="#i-leaf"/></svg></span><span>Krishi<b>Bondhu</b></span></div>
+    <div class="auth-card">
+      <h1 id="authTitle" data-i18n="au_title"></h1>
+      <p class="muted small" data-i18n="au_sub"></p>
+      <div class="auth-tabs" role="tablist">
+        <button type="button" role="tab" id="tabLogin" aria-selected="true" data-i18n="au_login"></button>
+        <button type="button" role="tab" id="tabReg" aria-selected="false" data-i18n="au_register"></button>
+      </div>
+
+      <form id="loginForm" autocomplete="on" novalidate>
+        <label class="f"><span data-i18n="au_email"></span><input type="email" id="lEmail" name="email" autocomplete="username" inputmode="email" required></label>
+        <label class="f"><span data-i18n="au_pass"></span>
+          <div class="pw"><input type="password" id="lPass" name="password" autocomplete="current-password" required><button type="button" class="btn alt sm" data-showpw="lPass" data-i18n="au_show"></button></div></label>
+        <div id="lErr" class="err" role="alert" hidden></div>
+        <button class="btn" type="submit" id="lGo"><span data-i18n="au_login"></span></button>
+        <div class="auth-demo">
+          <b data-i18n="au_demo_t"></b>
+          <span><span data-i18n="au_email"></span>: <code>judge@krishibondhu.app</code></span>
+          <span><span data-i18n="au_pass"></span>: <code>DemoPass2026!</code></span>
+          <button type="button" class="btn sm" id="demoFill" data-i18n="au_demo_btn"></button>
+        </div>
+      </form>
+
+      <form id="regForm" autocomplete="on" novalidate hidden>
+        <label class="f"><span data-i18n="au_name"></span><input type="text" id="rName" name="name" autocomplete="name" required></label>
+        <label class="f"><span data-i18n="au_email"></span><input type="email" id="rEmail" name="email" autocomplete="username" inputmode="email" required></label>
+        <label class="f"><span data-i18n="au_pass"></span>
+          <div class="pw"><input type="password" id="rPass" name="password" autocomplete="new-password" minlength="8" required><button type="button" class="btn alt sm" data-showpw="rPass" data-i18n="au_show"></button></div></label>
+        <label class="f"><span data-i18n="au_pass2"></span><input type="password" id="rPass2" autocomplete="new-password" required></label>
+        <p class="muted small" data-i18n="au_rule"></p>
+        <div id="rErr" class="err" role="alert" hidden></div>
+        <button class="btn" type="submit" id="rGo"><span data-i18n="au_register"></span></button>
+      </form>
+      <p class="muted small" data-i18n="au_note"></p>
+    </div>
+  </div>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="KrishiBondhu"><span class="logo-mark"><svg class="i"><use href="#i-leaf"/></svg></span><span>Krishi<b>Bondhu</b></span></a>
+    <nav class="nav" aria-label="Main"><a href="#home" data-v="home"><svg class="i"><use href="#i-home"/></svg><span data-i18n="nav_home"></span></a><a href="#diagnose" data-v="diagnose"><svg class="i"><use href="#i-scan"/></svg><span data-i18n="nav_diag"></span></a><a href="#map" data-v="map"><svg class="i"><use href="#i-map"/></svg><span data-i18n="nav_map"></span></a><a href="#weather" data-v="weather"><svg class="i"><use href="#i-cloud"/></svg><span data-i18n="nav_wx"></span></a><a href="#crops" data-v="crops"><svg class="i"><use href="#i-book"/></svg><span data-i18n="nav_crops"></span></a><a href="#help" data-v="help"><svg class="i"><use href="#i-help"/></svg><span data-i18n="nav_help"></span></a><a href="#more" data-v="more"><svg class="i"><use href="#i-grid"/></svg><span data-i18n="nav_more"></span></a></nav>
+    <div class="tools">
+      <span id="mode" class="mode"></span>
+      <button class="btn-ghost" id="langBtn" type="button" aria-label="Language">বাং / EN</button>
+      <button class="btn-ghost" id="themeBtn" type="button" aria-label="Theme"><svg class="i"><use href="#i-sun"/></svg></button>
+      <span id="userChip" class="uchip" hidden></span>
+      <button class="btn-ghost" id="logoutBtn" type="button" hidden><span data-i18n="au_logout"></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+<section class="view" id="v-home"></section>
+<!-- ============ DIAGNOSE ============ -->
+<section class="view" id="v-diagnose">
+  <div class="head">
+    <h1 data-i18n="d_title"></h1>
+    <p data-i18n="d_sub"></p>
+  </div>
+  <div class="grid2">
+    <div class="stack">
+      <form class="card stack" id="dxForm" autocomplete="off">
+        <label class="scan" id="scan" for="imgIn" tabindex="0">
+          <i></i><i></i><i></i><i></i>
+          <input type="file" id="imgIn" accept="image/*" capture="environment">
+          <div id="scanEmpty" class="stack" style="justify-items:center;gap:6px">
+            <svg class="i" style="width:34px;height:34px;color:var(--brand)"><use href="#i-scan"/></svg>
+            <b data-i18n="d_drop"></b>
+            <span class="muted small" data-i18n="d_drop_sub"></span>
+          </div>
+          <img id="prev" alt="" hidden>
+        </label>
+
+        <video id="vid" class="cam" autoplay playsinline muted hidden></video>
+        <div class="row">
+          <button type="button" class="btn alt" id="camBtn"><svg class="i"><use href="#i-camera"/></svg><span data-i18n="d_cam"></span></button>
+          <button type="button" class="btn sm" id="snapBtn" hidden><span data-i18n="d_snap"></span></button>
+          <button type="button" class="btn alt mic" id="micBtn"><svg class="i"><use href="#i-mic"/></svg><span id="micTxt" data-i18n="d_mic"></span></button>
+          <span class="muted small" id="micInfo"></span>
+        </div>
+        <div id="camErr" class="err" hidden></div>
+
+        <label class="f"><span data-i18n="d_text"></span>
+          <textarea id="q" data-i18n-ph="d_text_ph"></textarea>
+        </label>
+        <div class="chips" id="sample"></div>
+
+        <div class="row" style="align-items:end">
+          <label class="f" style="flex:1;min-width:150px"><span data-i18n="d_district"></span>
+            <select id="district"></select></label>
+          <label class="row small" style="gap:8px"><input type="checkbox" id="saveMap" checked><span data-i18n="d_save"></span></label>
+        </div>
+
+        <label class="row small" style="gap:8px"><input type="checkbox" id="agentMode"><span data-i18n="d_agent"></span></label>
+        <div class="row" id="agentFields" hidden>
+          <label class="f" style="flex:1;min-width:140px"><span data-i18n="d_fname"></span><input type="text" id="fname"></label>
+          <label class="f" style="flex:1;min-width:140px"><span data-i18n="d_fphone"></span><input type="tel" id="fphone" inputmode="tel"></label>
+        </div>
+
+        <div id="formErr" class="err" hidden></div>
+        <button class="btn" type="submit" id="goBtn"><svg class="i"><use href="#i-leaf"/></svg><span data-i18n="d_go"></span></button>
+      </form>
+    </div>
+
+    <div class="stack">
+      <article class="card stack" id="result" aria-live="polite"></article>
+      <div class="card" id="histCard">
+        <h2 data-i18n="h_title"></h2>
+        <ul class="hist" id="hist"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="view" id="v-weather" hidden></section>
+<section class="view" id="v-crops" hidden></section>
+<section class="view" id="v-help" hidden></section>
+<section class="view" id="v-more" hidden></section>
+<section class="view" id="v-insights" hidden></section>
+<section class="view" id="v-loss" hidden></section>
+<section class="view" id="v-roadmap" hidden></section>
+<section class="view" id="v-market" hidden></section>
+<section class="view" id="v-pitch" hidden></section>
+<section class="view" id="v-business" hidden></section>
+<!-- ============ MAP ============ -->
+<section class="view" id="v-map" hidden>
+  <div class="head">
+    <h1 data-i18n="m_title"></h1>
+    <p data-i18n="m_sub"></p>
+  </div>
+  <div class="mapgrid">
+    <div>
+      <div class="mapbox"><svg id="mapSvg" viewBox="-45 -10 1595 2160" role="img" aria-label="Bangladesh outbreak map"></svg></div>
+      <div class="legend">
+        <span><i style="background:var(--crit)"></i><span data-i18n="m_high"></span></span>
+        <span><i style="background:var(--gold)"></i><span data-i18n="m_med"></span></span>
+        <span><i style="background:none;border:2px dashed var(--crit)"></i><span data-i18n="m_ring"></span></span>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card stack">
+        <div class="kpis" id="kpis"></div>
+        <div id="sampleNote" class="note" hidden></div>
+      </div>
+      <div class="card stack"><h2 data-i18n="m_alerts"></h2><div class="stack" id="alerts"></div></div>
+      <div class="card stack"><h2 data-i18n="m_by"></h2><div class="bars" id="bars"></div></div>
+      <div class="card stack" id="pick" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENT ============ -->
+<section class="view" id="v-agent" hidden>
+  <div class="head">
+    <h1 data-i18n="a_title"></h1>
+    <p data-i18n="a_sub"></p>
+  </div>
+  <div class="stack">
+    <div class="card kpis" id="aKpis" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"></div>
+    <div class="card stack">
+      <div class="row" style="justify-content:space-between">
+        <h2 style="margin:0" data-i18n="a_ledger"></h2>
+        <div class="row">
+          <a class="btn sm" href="#diagnose" id="aNew"><span data-i18n="a_new"></span></a>
+          <button class="btn alt sm" id="aCopy" type="button"><svg class="i"><use href="#i-copy"/></svg><span data-i18n="a_csv"></span></button>
+        </div>
+      </div>
+      <div class="tbl"><table><thead><tr><th data-i18n="a_c1"></th><th data-i18n="a_c2"></th><th data-i18n="a_c3"></th><th data-i18n="a_c4"></th></tr></thead><tbody id="ledger"></tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHANNELS ============ -->
+<section class="view" id="v-channels" hidden>
+  <div class="head">
+    <h1 data-i18n="c_title"></h1>
+    <p data-i18n="c_sub"></p>
+  </div>
+  <div class="phones">
+    <div class="phone">
+      <b>USSD <span style="opacity:.7">*123#</span></b>
+      <div class="screen" id="ussdScreen"></div>
+      <div class="row" style="flex-wrap:nowrap">
+        <input type="text" id="ussdIn" inputmode="numeric" aria-label="USSD input" placeholder="1">
+        <button class="btn sm" id="ussdSend" type="button" data-i18n="c_send"></button>
+      </div>
+      <button class="btn-ghost" style="color:#dff3e0;border-color:#2b3f2d;background:transparent;justify-content:center" id="ussdReset" type="button" data-i18n="c_reset"></button>
+    </div>
+    <div class="phone">
+      <b data-i18n="c_ivr"></b>
+      <div class="screen" id="ivrScreen"></div>
+      <textarea id="ivrIn" aria-label="IVR" style="min-height:64px" data-i18n-ph="c_ivr_ph"></textarea>
+      <button class="btn sm" id="ivrCall" type="button"><span data-i18n="c_call"></span></button>
+    </div>
+    <div class="phone">
+      <b data-i18n="c_sms"></b>
+      <div class="screen" id="smsScreen" style="white-space:normal"></div>
+      <button class="btn sm" id="smsNew" type="button" data-i18n="c_sms_btn"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="view" id="v-about" hidden>
+  <div class="head">
+    <h1 data-i18n="ab_title"></h1>
+    <p data-i18n="ab_sub"></p>
+  </div>
+  <div class="stack">
+    <div id="mission" class="stack"></div>
+    <div class="tiers" id="tiers"></div>
+    <div class="card stack">
+      <h2 data-i18n="ab_run"></h2>
+<pre>cd krishibondhu/backend
+pip install -r requirements.txt
+cp .env.example .env        # add GEMINI_API_KEY / OPENAI_API_KEY (optional)
+uvicorn main:app --reload   # website + API on http://localhost:8000
+
+# or
+docker compose up --build</pre>
+      <label class="f"><span data-i18n="ab_api"></span>
+        <div class="row" style="flex-wrap:nowrap"><input type="url" id="apiUrl" placeholder="https://your-server.example.com"><button class="btn sm" id="apiSave" type="button" data-i18n="ab_save"></button></div></label>
+      <p class="muted small" data-i18n="ab_priv"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap" id="foot"></div></footer>
+
+<nav class="tabs" aria-label="Main"><a href="#home" data-v="home"><svg class="i"><use href="#i-home"/></svg><span data-i18n="nav_home"></span></a><a href="#diagnose" data-v="diagnose"><svg class="i"><use href="#i-scan"/></svg><span data-i18n="nav_diag"></span></a><a href="#map" data-v="map"><svg class="i"><use href="#i-map"/></svg><span data-i18n="nav_map"></span></a><a href="#weather" data-v="weather"><svg class="i"><use href="#i-cloud"/></svg><span data-i18n="nav_wx"></span></a><a href="#more" data-v="more"><svg class="i"><use href="#i-grid"/></svg><span data-i18n="nav_more"></span></a></nav>
+
+
+<script src="js/data-geo-kb.js"></script>
+<script src="js/market-logic.js"></script>
+<script src="data/market-data.js"></script>
+<script src="js/extras.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
